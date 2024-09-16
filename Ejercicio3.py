@@ -7,14 +7,14 @@ class VentanaCedula(QWidget):
         self.inicializar_ui()
 
     def inicializar_ui(self):
-        self.setWindowTitle('Número de Cédula y Nombre')
+        self.setWindowTitle('Número de DUI y Nombre')
         self.setGeometry(100, 100, 300, 200)
 
         # Crear un layout
         layout = QVBoxLayout()
 
         # Campos de texto
-        label_cedula = QLabel('Introduce tu número de cédula:', self)
+        label_cedula = QLabel('Introduce tu número de DUI:', self)
         self.campo_cedula = QLineEdit(self)
 
         label_nombre = QLabel('Introduce tu nombre completo:', self)
@@ -37,7 +37,7 @@ class VentanaCedula(QWidget):
     def mostrar_datos(self):
         cedula = self.campo_cedula.text()
         nombre = self.campo_nombre.text()
-        print(f"Cédula: {cedula}, Nombre: {nombre}")  # Mostrar en consola
+        print(f"DUI: {cedula}, Nombre: {nombre}")  # Mostrar en consola
 
 # Ejecutar la aplicación
 if __name__ == '__main__':
